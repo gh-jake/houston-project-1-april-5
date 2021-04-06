@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href='style.css' />
+  <script src="src/index.js"></script>
+  <title>KidsMDb</title>
+</head>
+<body>
+  <h2>How Old Are You Based On Your Name?</h2>
+
+  <section id="form-section">
+    <h3>tip: including a country code improves accuracy!</h3>  
+    <form id="form">
+      <label for="nameInput">Name:</label>
+      <input id="nameInput" type="text" placeholder="Name"/>
+      <br>
+      <br>
+      <label for="countryInput">Country code (optional):</label>
+      <input id="countryInput" type="text" placeholder="e.g. US, CA"/>
+      <br>
+      <br>
+      <input type="submit" />
+    </form>
+  </section>
+  <section id="age-section" hidden>
+      <p>You are</p>
+      <h3 id="age-h3">age</h3>
+      <p>years old</p>
+      <button id="button">Back</button>
+  </section>
+  <h4>powered by Agify.io</h4>
+</body>
+</html>

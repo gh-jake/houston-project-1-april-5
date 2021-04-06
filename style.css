@@ -1,0 +1,12 @@
+body {
+    max-width: 500px;
+    margin: auto;
+  }
+
+h2, h4, p, input, label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-style: italic;
+}
