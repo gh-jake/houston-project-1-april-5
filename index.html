@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href='style.css' />
   <script src="src/index.js"></script>
-  <title>KidsMDb</title>
+  <title>Age Guesser</title>
 </head>
 <body>
   <h2>How Old Are You Based On Your Name?</h2>
-
+  <h4>powered by Agify.io</h4>
   <section id="form-section">
     <h3>tip: including a country code improves accuracy!</h3>  
     <form id="form">
@@ -17,19 +17,36 @@
       <input id="nameInput" type="text" placeholder="Name"/>
       <br>
       <br>
-      <label for="countryInput">Country code (optional):</label>
-      <input id="countryInput" type="text" placeholder="e.g. US, CA"/>
+      <label for="countryInput">Country (optional):</label>
+      <select name="countries" id="countries">
+          <option value="select" selected>select</option>
+      </select>
       <br>
       <br>
       <input type="submit" />
     </form>
+    <button id="save-name-btn" hidden>Save name</button>
   </section>
   <section id="age-section" hidden>
-      <p>You are</p>
-      <h3 id="age-h3">age</h3>
-      <p>years old</p>
-      <button id="button">Back</button>
+      <p>Name:</p>
+      <h3 id="name-h3"></h3>
+      <section id="country-section" hidden>
+        <p>Country:</p>
+        <h3 id="country-h3"></h3>
+      </section>
+      <p>Age:</p>
+      <h3 id="age-h3"></h3>
   </section>
-  <h4>powered by Agify.io</h4>
+  <section id="buttons-section" hidden> 
+    <button id="back-button">Back</button>
+    <button id="save-name-button">Save name</button>
+  </section>
+  <section id="saved-names-section" hidden>
+    <br><br>
+    <h3>Saved Names:</h3>
+    <ul id="saved-names">
+
+    </ul>
+  </section>
 </body>
 </html>
