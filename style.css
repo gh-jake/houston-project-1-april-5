@@ -10,3 +10,7 @@ h2, h4, p, input, label {
 h3 {
     font-style: italic;
 }
+
+#saved-names-section {
+    color: blue;
+}
