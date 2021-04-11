@@ -15,7 +15,6 @@ function formSubmitted(event) {
     hasCountry = false;
     getResults();
     document.getElementById("nameInput").value = "";
-    // document.getElementById("countryInput").value = "";
 }
 
 function fetchCountries() {
@@ -37,7 +36,6 @@ function getResults() {
     nameInput = document.getElementById("nameInput").value;
     currentName = capitalize(nameInput);
     countryInput = document.getElementById("countries").value;
-    console.log(countryInput);
 
     if(countryInput === "select" && nameInput.length != 0) {
         fetchAge(`https://api.agify.io?name=${nameInput}`);
@@ -116,7 +114,6 @@ function saveNameFunction() {
 }
 
 function deleteFunction(event) {
-    console.log(event.target.parentNode);
     ul = event.target.parentNode.parentNode;
     ul.removeChild(event.target.parentNode);
     if (ul.getElementsByTagName("li").length < 1) {
